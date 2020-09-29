@@ -20,7 +20,26 @@ export class __Blank extends React.Component {
     return { headerLeft: <SlideMenuIcon navigationProps={navigation} /> }
   }
   state = {}
-  render = () => <View style={this.props.themedStyle.View_1} />
+  render = () => (
+    <View style={this.props.themedStyle.View_1}>
+      <Image
+        resizeMode="cover"
+        source={{
+          uri:
+            "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/download_S7Ixuoo.jpeg"
+        }}
+        style={this.props.themedStyle.Image_3}
+      />
+      <Image
+        resizeMode="cover"
+        source={{
+          uri:
+            "https://crowdbotics-slack-dev.s3.amazonaws.com/media/project_component_resources/download_S7Ixuoo.jpeg"
+        }}
+        style={this.props.themedStyle.Image_5}
+      />
+    </View>
+  )
 }
 
 _Blank = withStyles(__Blank, theme => ({
@@ -53,6 +72,48 @@ _Blank = withStyles(__Blank, theme => ({
     borderBottomWidth: 0,
     borderRadius: 0,
     backgroundSize: "auto"
+  },
+  Image_3: {
+    width: 239,
+    height: 200,
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0
+  },
+  Image_5: {
+    width: 239,
+    height: 200,
+    marginLeft: 0,
+    marginRight: 0,
+    marginTop: 0,
+    marginBottom: 0,
+    paddingLeft: 0,
+    paddingRight: 0,
+    paddingTop: 0,
+    paddingBottom: 0,
+    overflow: "visible",
+    borderColor: "#000000",
+    borderStyle: "solid",
+    borderWidth: 0,
+    borderLeftWidth: 0,
+    borderRightWidth: 0,
+    borderTopWidth: 0,
+    borderBottomWidth: 0,
+    borderRadius: 0
   }
 }))
 
